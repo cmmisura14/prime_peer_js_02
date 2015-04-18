@@ -24,10 +24,13 @@ function Person(name, age, workoutHours, weight, burritos){
 function randomNumber(min, max) {
 	return Math.floor(Math.random() * (1 + max - min) + min);
 }
+//An array to pull names from
 var namingArray = ["Bob", "Steve", "Mark", "Cody", "Scott", "Mike", "Kelly", "Mary"];
 
+//An empty array to push the new employees to
 var employeeArray = [];
 
+//A function that generates new employees
 function generateEmployee(array){
 	var tempArray = [];
 	for(var i = 0; i < array.length; i++){
